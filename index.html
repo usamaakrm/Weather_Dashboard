@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="design.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript"></script>
+</head>
+<body>
+    
+    <div class="dashboard flex">
+        <div class="dash-1">
+            <div class="location flex">
+                <h4>New York, USA</h4>
+                <h5>07:19</h5>
+            </div>
+            <div class="location flex">
+                <h4>Today 28 Sept</h4>
+                <h5>19:32</h5>
+            </div>
+
+            <div class="climate center">
+                <h1>14°</h1>
+                <img src="img/icons8-cloud-94.png" width="50px" alt="">
+                <h4>Cloudy</h4>
+            </div>
+        </div>
+        <div class="dash-2">
+              <h3 class="title">Welcome back Usamah Akram!</h3>
+              <h5 class="sub-title">Check out today's weather information</h5>
+              <div class="dash-data">
+                <div class="data flex">
+                    <div class="data-item">
+                        <h5>Now</h5>
+                        <img src="img/s1.svg" alt="">
+                        <h5>26°</h5>
+                    </div>
+                    <div class="data-item">
+                        <h5>11:00</h5>
+                        <img src="img/s7.svg" alt="">
+                        <h5>28°</h5>
+                    </div>
+                    <div class="data-item">
+                        <h5>12:00</h5>
+                        <img src="img/s1.svg" alt="">
+                        <h5>29°</h5>
+                    </div>
+                    <div class="data-item">
+                        <h5>13:00</h5>
+                        <img src="img/s5.svg" alt="">
+                        <h5>30°</h5>
+                    </div>
+                    <div class="data-item">
+                        <h5>14:00</h5>
+                        <img src="img/s3.svg" alt="">
+                        <h5>30°</h5>
+                    </div>
+                   
+                    <div class="data-item">
+                        <h5>15:00</h5>
+                        <img src="img/s9.svg" alt="">
+                        <h5>29°</h5>
+                    </div>
+                    <div class="data-item">
+                        <h5>16:00</h5>
+                        <img src="img/s3.svg" alt="">
+                        <h5>29°</h5>
+                    </div>
+                    <div class="data-item">
+                        <h5>17:00</h5>
+                        <img src="img/s4.svg" alt="">
+                        <h5>28°</h5>
+                    </div>
+                </div>
+                <div id="chart_div" style="width: 1000px; height: 150px;" data-aos="fade-down"
+                data-aos-duration="1000"></div>
+              </div>
+              <h2 class="details">More details of today's weather</h2>
+              <div class="detail-data">
+                <div class="weather-info flex" data-aos="fade-up"
+                data-aos-duration="1500">
+                    <!-- Humidity -->
+                    <div class="humidity designs">
+                        <div class="flex">
+                            <h4>Humidity</h4>
+                            <img src="img/s10.svg" alt="" width="30px">
+                        </div>
+                        <h3 class="center">83% <span>bad</span></h3>
+                        <div class="humidity-detail flex">
+                            <div>
+                                 <h5>good</h5>
+                                 <div class="bar">.</div>
+                            </div>
+                            <div>
+                                <h5>normal</h5>
+                                <div class="bar">.</div>
+                            </div>
+                            <div>
+                                 <h5>bad</h5>
+                                 <div class=" bar avg" >.</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                     <!-- Wind -->
+                    <div class="designs">
+                        <div class="wing-content flex">
+                            <h4>Wind</h4>
+                           <img src="img/s7.svg"" alt="" width="30px">
+                        </div>
+                        <div id="donutchart" style="width: 250px; height: 100px;"></div>
+                    </div>
+                    
+                    <!-- Precipitation -->
+                    <div class="designs">
+                        <div class="precipitation-content flex">
+                            <h4>Precipitation</h4>
+                            <img src="img/s5.svg" alt="" width="30px">
+                        </div>
+                        <h3 class="center">1.4 cm</h3>
+                        <div class="flex lvl">
+                            <div class="lvl-item">
+                                <h6>0</h6>
+                                <div>.</div>
+                            </div>
+                            <div class="lvl-item">
+                                <h6>10</h6>
+                                <div>.</div>
+                            </div>
+                            <div class="lvl-item">
+                                <h6>20</h6>
+                                <div>.</div>
+                            </div>
+                            <div class="lvl-item">
+                                <h6>30</h6>
+                                <div>.</div>
+                            </div>
+                            <div class="lvl-item">
+                                <h6>40</h6>
+                                <div>.</div>
+                            </div>
+                            <div class="lvl-item">
+                                <h6>50</h6>
+                                <div>.</div>
+                            </div>
+                            <div class="lvl-item">
+                                <h6>60</h6>
+                                <div>.</div>
+                            </div>
+                            <div class="lvl-item">
+                                <h6>70</h6>
+                                <div>.</div>
+                            </div>
+                            <div class="lvl-item">
+                                <h6>80</h6>
+                                <div>.</div>
+                            </div>
+                            <div class="lvl-item">
+                                <h6>90</h6>
+                                <div>.</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- uv index -->
+                    <div class="designs">
+                        <div class="uv-content flex">
+                            <h4>UV index</h4>
+                            <img src="img/s8.svg" width="30px" alt="">
+                        </div>
+                        <h3 class="center">4 <span>medium</span></h3>
+                        <div class="flex lvl">
+                            <div class="lvl-item2">
+                                <h6>0-2</h6>
+                                <div class="mark">.</div>
+                            </div>
+                            <div class="lvl-item2">
+                                <h6>3-5</h6>
+                                <div class="mark">.</div>
+                            </div>
+                            <div class="lvl-item2">
+                                <h6>6-7</h6>
+                                <div>.</div>
+                            </div>
+                            <div class="lvl-item2">
+                                <h6>8-10</h6>
+                                <div>.</div>
+                            </div>
+                            <div class="lvl-item2">
+                                <h6>11+</h6>
+                                <div>.</div>
+                            </div></div>
+                    </div>
+
+                    <!--   Feels like -->
+                    <div class="designs">
+                        <div class="flex feels">
+                            <h4>Feels like</h4>
+                        <img src="img/s6.svg" alt="" width="30px">
+                        </div>
+                        <h3 class="center">35°</h3>
+                        <div class="degree flex">
+                           <h4>0°</h4>
+                           <h4>25°</h4>
+                           <h4 class="grey">50°</h4>
+                        </div>
+                    </div>
+
+                    <!--   rain -->
+                    <div class="designs">
+                        <div class="rain-content flex">
+                            <h4>Chance of rain</h4>
+                        <img src="img/s9.svg" alt="" width="30px">
+                        </div>
+                        <h3 class="center">
+                            40%
+                        </h3>
+                        <div class="degree flex">
+                            <h4>0%</h4>
+                            <h4>25%</h4>
+                            <h4 class="grey">50%</h4>
+                            <h4 class="grey">75%</h4>
+                            <h4 class="grey">100%</h4>
+                         </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+        <script src="script.js"></script>
+        <script>google.charts.load("current", {packages:["corechart"]});
+            google.charts.setOnLoadCallback(drawChart);
+            function drawChart() {
+              var data = google.visualization.arrayToDataTable([
+                ['Task', 'Hours per Day'],
+                ['Today',     10],
+                ['Tommorrow',      5],
+                ['Wednesday',  10],
+                ['Friday', 20],
+                ['Satuday',    10],
+                ['Sunday',    10]
+              ]);
+          
+              var options = {
+                title: '8 Km/h',
+                pieHole: 0.4,
+                backgroundColor: {
+                  fill: '#FF0000',
+                  fillOpacity: 0.0,
+                  color: "fffffff"
+                },slices: {
+            0: { color: 'rgb(95, 95, 236)' },
+            1: { color: 'rgb(95, 95, 236)' },
+            2: { color: 'gray' },
+            3: { color: 'rgb(95, 95, 236)' },
+            4: { color: 'gray' },
+            5: { color: 'gray' }
+          }
+              };
+          
+              var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+              chart.draw(data, options);
+            }
+            </script>
+            <script>
+                AOS.init();
+              </script>
+</body>
+</html>
